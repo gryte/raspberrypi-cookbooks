@@ -6,3 +6,11 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+
+package "cups" do
+	action :install
+end
+
+service "cups" do
+	action [:enable, :start]
+end
