@@ -14,3 +14,5 @@ end
 service "cups" do
 	action [:enable, :start]
 end
+
+execute "usermod -a -G lpadmin pi"
