@@ -16,3 +16,8 @@ service "cups" do
 end
 
 execute "usermod -a -G lpadmin pi"
+
+cookbook_file "/etc/cups/cupsd.conf" do
+	source "cupsd.conf"
+	notifies :restart, "service[cups]"
+end
