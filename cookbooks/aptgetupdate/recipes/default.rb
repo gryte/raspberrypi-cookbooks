@@ -6,3 +6,5 @@
 #
 # 
 #
+
+execute "apt-get update"
