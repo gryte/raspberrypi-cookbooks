@@ -3,5 +3,7 @@
     <h1>hello from <%= node['fqdn'] %></h1>
 	at <%= node['ipaddress'] %>
 	on <%= node['platform'] %>
+    <br>
+    <%= node['recipes'] %>
   </body>
 </html>
