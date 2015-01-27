@@ -2,7 +2,7 @@
   <body>
     <h1>hello from <%= node['fqdn'] %></h1>
 	at <%= node['ipaddress'] %>
-	on <%= node['platform'] %>
+	on <%= node['platform'] %> and <%= node['platform_version'] %>
     <br>
     <%= node['recipes'] %>
   </body>
